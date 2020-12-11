@@ -1,4 +1,4 @@
-# Wilsen Maitre
+# __author__  = Wilsen Maitre
 # The program will welcome the user and from their choice run a specific code.
 # Either a space or math related task.
 # Horoscopes for your Sun and Rising Signs : later(Final Sprint) : Files
@@ -113,6 +113,7 @@ def main():
             continue_program = False
 
 def astrological():
+    global astro_sign
     user_name = input("What is your first name: ")
     birthday = int(input("What is your birthday, enter a number: "))
     while birthday < 1 or birthday > 31:  # This will make sure the
@@ -282,6 +283,5 @@ def power_move():
         "that we won’t always make the right decisions, that we’ll screw up "
         "royally sometimes – understanding that failure is not the opposite "
         "of success, \nit’s part of success. – Arianna Huffington")
-
 
 main()
